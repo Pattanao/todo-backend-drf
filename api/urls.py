@@ -1,6 +1,5 @@
-from django.urls import path
-from .views import hello
+from django.urls import path, include
 
 urlpatterns = [
-    path('hello', hello, name='hello'),
+    path('', include('api.todo.urls')),
 ]
